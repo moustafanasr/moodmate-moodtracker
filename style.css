@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F3E5F5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Emoji Buttons */
+.emoji-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.emoji {
+  font-size: 24px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #E1BEE7;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.emoji:hover {
+  background-color: #D1C4E9;
+}
+
+/* Display Area */
+.display-area {
+  margin-top: 20px;
+}
+
+.selected-emoji {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.motivational-message {
+  font-size: 18px;
+  color: #6A1B9A;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .emoji-container {
+    flex-direction: column;
+  }
+
+  .emoji {
+    width: 100%;
+    text-align: center;
+  }
+}
